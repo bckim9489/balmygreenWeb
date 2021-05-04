@@ -1,7 +1,7 @@
         <nav class="home_nav top">
             <ul>
                 <li class="nav_logo">
-                    <a href="javascript:location.reload()" onclick="">BALMYGREEN</a> <!-- [FIXME] : after publishing, replace img tag <img src=".\image\common\logo.png" alt="BALMYGREEN" >-->
+                    <a href="./index.php" onclick="">BALMYGREEN</a> <!-- [FIXME] : after publishing, replace img tag <img src=".\image\common\logo.png" alt="BALMYGREEN" >-->
                 </li>
                 <li>
                     <a href="#">Order</a>

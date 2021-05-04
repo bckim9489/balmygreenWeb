@@ -11,7 +11,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#" onclick="redirectPage('ct-frame', './productList.php', 'all');">SHOP</a>
+                <a href="./productList.php" onclick="">SHOP</a>
                 <ul class="secondDept">
                     <li><a href="#" onclick="redirectPage('ct-frame', './productList.php', 'vase');">VASE</a></li>
                     <li><a href="#" onclick="redirectPage('ct-frame', './productList.php', 'poster');">POSTER</a></li>

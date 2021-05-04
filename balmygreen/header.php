@@ -28,3 +28,10 @@
             }
         ?>
     </div>
+    <div class ="container">
+        <div class ="left" style="">
+            <?
+                include_once("./sideNav.php");
+            ?>
+        </div>
+        <div class ="ct-frame" id = "ct-frame" style="">

@@ -25,7 +25,7 @@
         <div class="section">
             <div class="main_single">
                 <div data-aos="fade-down" data-aos-duration="300">
-                    <img src=".\image\common\logo.png" alt="BALMYGREEN" ></div>
+                    <img src=".\image\common\logo.png" alt="BALMYGREEN" >
                 </div>
             </div>
         </div>
