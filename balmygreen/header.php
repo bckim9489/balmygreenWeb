@@ -41,16 +41,16 @@
     <div class ="header">
         <?
             if($_SESSION["USER_ID"]){
-                include_once("./memberNav.php");
+                //include_once("./memberNav.php");
             } else {
-                include_once("./defaultNav.php");
+                //include_once("./defaultNav.php");
             }
         ?>
     </div>
     <div class ="container">
         <div class ="left" style="">
             <?
-                include_once("./sideNav.php");
+                //include_once("./sideNav.php");
             ?>
         </div>
         <div class ="ct-frame" id = "ct-frame" style="">

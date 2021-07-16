@@ -25,7 +25,7 @@
                         </div>
                         
                         <div class="comment-box">
-                            <a href="javascript:void(0);">
+                            <a href="javascript:void(0); onclick="fn_itemDetail(1);">
                                 <p class="product-name">이름이름</p>
                             </a>
                             <p class="product-price">1,234,567원</p>
