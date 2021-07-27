@@ -1,6 +1,6 @@
     <nav class="home_nav side">
-        <ul class= "firstDept">
-            <li>
+        <ul class= "firstDept" id="side-ui">
+            <li style="margin-bottom: 35px;">
                 <a href="#">ABOUT US</a>                
             </li>
             <li>

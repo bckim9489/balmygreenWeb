@@ -1,4 +1,8 @@
 var ScrollValue = 0;
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $(".bottom_menu").outerHeight();
 
 $(function () {
   $(window).on("scroll", function () {
@@ -11,16 +15,40 @@ $(function () {
   });
 });
 
+$(window).scroll(function (event) {
+  didScroll = true;
+});
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  if (Math.abs(lastScrollTop - st) <= delta) {
+    return;
+  }
+
+  if (st > lastScrollTop && st > navbarHeight) {
+    $(".bottom_menu").hide();
+  } else {
+    if (st + $(window).height() < $(document).height()) {
+      $(".bottom_menu").show();
+    }
+  }
+  lastScrollTop = st;
+}
+
 $(document).on("ready", function () {
   AOS.init();
   $(".aos-init").removeClass("aos-animate");
   $("#fullpage").fullpage({
-    //options here
     autoScrolling: true,
     scrollHorizontally: true,
   });
-  //methods
-  //$.fn.fullpage.setAllowScrolling(false);
   if ($("#fullpage").length > 0) {
     slideTimeout = setInterval(function () {
       $.fn.fullpage.moveSectionDown();

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
@@ -41,16 +41,30 @@
     <div class ="header">
         <?
             if($_SESSION["USER_ID"]){
-                //include_once("./memberNav.php");
+                include_once("./memberNav.php");
             } else {
-                //include_once("./defaultNav.php");
+                include_once("./defaultNav.php");
             }
         ?>
     </div>
     <div class ="container">
+        <div class="bottom_menu">
+            <div>
+                <a href="./index.php" onclick=""><img src="/image/common/menu/menu-home-ico.png"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/image/common/menu/menu-project-ico.png"></a>
+            </div>
+            <div>
+                <a href="./productList.php"onclick=""><img src="/image/common/menu/menu-shop-ico.png"></a>
+            </div>
+            <div>
+                <a href="#">MyPage</a>
+            </div>
+        </div>
         <div class ="left" style="">
             <?
-                //include_once("./sideNav.php");
+                include_once("./sideNav.php");
             ?>
         </div>
         <div class ="ct-frame" id = "ct-frame" style="">
