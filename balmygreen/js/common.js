@@ -51,7 +51,7 @@ $(document).on("ready", function () {
   });
   if ($("#fullpage").length > 0) {
     slideTimeout = setInterval(function () {
-      $.fn.fullpage.moveSectionDown();
+      //$.fn.fullpage.moveSectionDown();
     }, 8000);
   }
 });
